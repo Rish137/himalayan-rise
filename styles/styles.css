@@ -26,6 +26,7 @@ body {
 }
 
 .site-header::after {
+  z-index: -1;
   content: '';
   position: absolute;
   inset: 0;
