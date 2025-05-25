@@ -118,7 +118,6 @@ body {
   color: #2c3e50;
 }
 
-/* New Section Headings */
 .section-heading {
   font-size: 1.8rem;
   margin: 2rem 0 1rem;
@@ -151,4 +150,111 @@ body {
   text-align: center;
   color: #777;
   font-size: 0.9rem;
+}
+
+/* ------------------------------------- */
+/* Responsive Adjustments for Visibility */
+/* ------------------------------------- */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  .intro h2 {
+    font-size: 2.2rem;
+  }
+  .section-heading {
+    font-size: 1.7rem;
+  }
+}
+
+/* Large phones and small tablets */
+@media (max-width: 768px) {
+  .nav-links li {
+    margin-left: 1rem;
+  }
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .site-header {
+    height: 40vh;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.4rem;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  .btn {
+    padding: 0.7rem 1.5rem;
+  }
+
+  .intro h2 {
+    font-size: 2rem;
+  }
+  .intro p {
+    font-size: 0.95rem;
+  }
+  .section-heading {
+    font-size: 1.6rem;
+  }
+  .intro ol {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .nav-links li {
+    margin: 0.3rem 0.5rem 0 0;
+  }
+
+  .hero {
+    position: static;
+    transform: none;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .intro {
+    padding: 3rem 1rem;
+  }
+  .intro h2 {
+    font-size: 1.8rem;
+  }
+  .section-heading {
+    font-size: 1.4rem;
+  }
+  .intro p,
+  .intro ol {
+    max-width: 100%;
+    margin: 0 auto 1.2rem;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
